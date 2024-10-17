@@ -10,12 +10,14 @@ function ListGroup() {
   ];
 items=[];
 
- const message=items.length===0? <p>No items found</p>:null
+ const getmessage=()=>{
+  return items.length===0? <p>No items found</p>:null
+ }
   return (
     
     <>
       <h1>List</h1>
-      {message}
+      {getmessage()}
       <ul className="list-group">
       {items.map((item)=>
         (<li key={item}>{item}</li>))}
