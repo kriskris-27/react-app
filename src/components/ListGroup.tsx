@@ -11,7 +11,7 @@ function ListGroup() {
 items=[];
 
  const getmessage=()=>{
-  return items.length===0? <p>No items found</p>:null
+  return items.length===0 &&<p>No items found</p>
  }
   return (
     
